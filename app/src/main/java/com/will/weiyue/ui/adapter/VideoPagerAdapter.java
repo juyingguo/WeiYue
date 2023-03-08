@@ -33,7 +33,9 @@ public class VideoPagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        return videoChannelBean != null ? videoChannelBean.getTypes().size() : 0;
+        return videoChannelBean != null
+                ? (videoChannelBean.getTypes()!=null ? videoChannelBean.getTypes().size() :0)
+                : 0;
     }
 
     @Override
